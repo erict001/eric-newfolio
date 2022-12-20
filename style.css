@@ -1,0 +1,25 @@
+body {
+    background-color: aliceblue;
+    /* background-image: url(); */
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+#nav a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
