@@ -1,0 +1,23 @@
+{
+  "name": "eric-newfolio",
+  "version": "1.0.0",
+  "description": "Eric Taylor Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erict001/eric-newfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erict001/eric-newfolio/issues"
+  },
+  "homepage": "https://github.com/erict001/eric-newfolio#readme",
+  "dependencies": {
+    "typewriter-effect": "^2.19.0"
+  }
+}
