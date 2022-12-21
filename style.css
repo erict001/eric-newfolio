@@ -76,3 +76,55 @@ body {
     z-index: 1;
     color: white
 }
+
+.section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 30vw
+}
+
+div p {
+    margin-bottom: 1em;
+    line-height: 1.2;
+}
+
+.loader {
+    height: 1.1em;
+    border: 1px solid black;
+    margin-bottom: 0.3em;
+}
+
+#webDev {
+    height: 1em;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+#frontend {
+    height: 1em;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+#backend {
+    height: 1em;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0 0.5em 0.5em 0;
+}
