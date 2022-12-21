@@ -78,7 +78,7 @@ body {
 }
 
 .section {
-    height: 50vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +106,7 @@ div p {
     justify-content: space-between;
     background-color: black;
     border: 1px solid black;
-    border-radius: 0 0.5em 0.5em 0;
+    border-radius: 0 0.35em 0.35em 0;
 }
 
 #frontend {
@@ -116,7 +116,7 @@ div p {
     justify-content: space-between;
     background-color: black;
     border: 1px solid black;
-    border-radius: 0 0.5em 0.5em 0;
+    border-radius: 0 0.35em 0.35em 0;
 }
 
 #backend {
@@ -126,5 +126,5 @@ div p {
     justify-content: space-between;
     background-color: black;
     border: 1px solid black;
-    border-radius: 0 0.5em 0.5em 0;
+    border-radius: 0 0.35em 0.35em 0;
 }
