@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -142,4 +143,8 @@ div p {
 
 .container {
     height: 75vh;
+}
+
+.card-text {
+    font-family: "Poppins", sans-serif;
 }
