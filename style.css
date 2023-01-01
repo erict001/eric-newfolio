@@ -3,17 +3,67 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.heroGrid {
+    height: 95vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "aboutMe portfolio"
+    "experience contactMe";
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.heroGridArea h1 {
+    z-index: 2;
+    opacity: 2;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#aboutMe {
+    grid-area: aboutMe;
+    background-image: url(./images/view.jpg);
+}
+
+#portfolio {
+    grid-area: portfolio;
+    background-image: url(./images/keyboards.jpeg);
+}
+
+#experience {
+    grid-area: experience;
+    background-image: url(./images/portfolio.png);
+}
+#contactMe {
+    grid-area: contactMe;
+    background-image: url(./images/email.jpg);
+}
+
 body {
     background-color: aliceblue;
     /* background-image: url(); */
 }
 
-#header {
+/* #header {
     background-image: url(./images/view.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh
-}
+} */
 
 #header:before {
     content: '';
@@ -23,7 +73,7 @@ body {
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.7);
-        opacity: .4; 
+        /* opacity: .4;  */
         z-index: 0;
   }
 
@@ -32,7 +82,7 @@ body {
     justify-content: space-between;
     padding: 0 5rem 0 5rem;
     align-items: center;
-    padding-top: 2em;
+    padding-top: 1em;
     z-index: 1;
     color: rgb(224, 224, 224);
 }

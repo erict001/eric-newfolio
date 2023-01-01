@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Taylor Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800">
 </head>
 
 <body>
-    <header id="header" class="overlay">
+    <header id="header" style="padding-bottom: 1rem;">
         <div id="headerDiv">
-            <div style="height: min-content; z-index: 1;">
+            <div style="z-index: 1;">
                 <a class="anchorTag" href="#home">
                     <h3>Eric Taylor</h3>
                 </a>
@@ -29,25 +29,42 @@
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-        <div id="headerContent">
-            <h1>Hello</h1>
+        <!-- <div id="headerContent">
             <div id="app"></div>
-            <!-- Github -->
+            Github
             <a href="http://"><img></a>
-            <!-- LinkedIn -->
+            LinkedIn
             <a href="http://"><img></a>
-            <!--  -->
+            
             <a href="http://"><img></a>
-
-        </div>
+        </div> -->
     </header>
+
+    <!-- HERO GRID -->
+    <section class="heroGrid">
+        <div class="heroGridArea" id="aboutMe">
+            <h1>About Me</h1>
+        </div>
+        <div class="heroGridArea" id="portfolio">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="heroGridArea" id="experience">
+            <h1>Experience</h1>
+        </div>
+        <div class="heroGridArea" id="contactMe">
+            <h1>Contact Me</h1>
+        </div>
+    </section>
+
+
+
     <!-- ABOUT ME SECTION -->
     <section class="section" id="about">
-        <div style="display: flex; justify-content: center">
+        <div class="col-md-4" style="display: flex; justify-content: center">
             <img src="./images/Eric.png">
         </div>
         <!-- TEXT DESCRIPTION -->
-        <div style="width: 50%">
+        <div class="col-md-6">
             <div style="margin-bottom: 1em">
                 <h1 style="margin-bottom: 0.3em"><b>About Me.</b></h1>
                 <h3>Full Stack Software Developer</h3>
