@@ -4,14 +4,14 @@
 }
 
 .heroGrid {
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "aboutMe portfolio"
-    "experience contactMe";
+    grid-template-areas:
+        "aboutMe portfolio"
+        "experience contactMe";
 }
 
 .heroGridArea {
@@ -21,9 +21,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    position: relative;
     opacity: 0.5;
-    z-index: 0;
+    z-index: -1;
 }
 
 .heroGridArea h1 {
@@ -31,12 +30,16 @@
     opacity: 2;
     font-size: 3rem;
     color: white;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 4px black;
 }
 
 #aboutMe {
     grid-area: aboutMe;
     background-image: url(./images/view.jpg);
+}
+
+#aboutMe h1:hover {
+    color: black
 }
 
 #portfolio {
@@ -48,6 +51,7 @@
     grid-area: experience;
     background-image: url(./images/portfolio.png);
 }
+
 #contactMe {
     grid-area: contactMe;
     background-image: url(./images/email.jpg);
@@ -67,15 +71,15 @@ body {
 
 #header:before {
     content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        /* opacity: .4;  */
-        z-index: 0;
-  }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* opacity: .4;  */
+    z-index: 0;
+}
 
 #headerDiv {
     display: flex;
@@ -97,7 +101,7 @@ body {
 
 #headerContent h1 {
     font-size: 6em;
-    color:rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
     z-index: 1;
 }
 
