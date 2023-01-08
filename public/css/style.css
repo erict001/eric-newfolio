@@ -3,6 +3,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-color: aliceblue;
+}
+
 .heroGrid {
     height: 100vh;
     width: 100vw;
@@ -13,6 +17,7 @@
         "aboutMe portfolio"
         "experience contactMe";
 }
+
 
 .heroGridArea {
     background-position: center;
@@ -35,101 +40,26 @@
 
 #aboutMe {
     grid-area: aboutMe;
-    background-image: url(./images/view.jpg);
+    background-image: url(/images/view.jpg);
 }
 
 #aboutMe h1:hover {
-    color: black
+    background-image: url(/images/Eric.png);
 }
 
 #portfolio {
     grid-area: portfolio;
-    background-image: url(./images/keyboards.jpeg);
+    background-image: url(/images/keyboards.jpeg);
 }
 
 #experience {
     grid-area: experience;
-    background-image: url(./images/portfolio.png);
+    background-image: url(/images/portfolio.png);
 }
 
 #contactMe {
     grid-area: contactMe;
-    background-image: url(./images/email.jpg);
-}
-
-body {
-    background-color: aliceblue;
-    /* background-image: url(); */
-}
-
-/* #header {
-    background-image: url(./images/view.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh
-} */
-
-#header:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    /* opacity: .4;  */
-    z-index: 0;
-}
-
-#headerDiv {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5rem 0 5rem;
-    align-items: center;
-    padding-top: 1em;
-    z-index: 1;
-    color: rgb(224, 224, 224);
-}
-
-#headerContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-#headerContent h1 {
-    font-size: 6em;
-    color: rgb(224, 224, 224);
-    z-index: 1;
-}
-
-#nav {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    z-index: 1;
-    color: rgb(224, 224, 224)
-}
-
-#nav a {
-    text-decoration: inherit;
-    color: inherit;
-}
-
-#nav a:hover {
-    text-decoration: underline;
-}
-
-.anchorTag {
-    text-decoration: inherit;
-    color: inherit;
-}
-
-#app {
-    z-index: 1;
-    color: white
+    background-image: url(/images/email.jpg);
 }
 
 .section {
@@ -139,8 +69,19 @@ body {
     align-items: center;
 }
 
-img {
-    width: 30vw
+.portfolio {
+    height: 50vh;
+    width: 50vw
+}
+
+.experience {
+    height: 50vh;
+    width: 50vw
+}
+
+.contact {
+    height: 50vh;
+    width: 50vw
 }
 
 div p {
@@ -183,22 +124,4 @@ div p {
     background-color: black;
     border: 1px solid black;
     border-radius: 0 0.35em 0.35em 0;
-}
-
-#resume {
-    background-color: rgb(26, 26, 26);
-    color: white
-}
-
-#resume:hover {
-    background-color: white;
-    color: black
-}
-
-.container {
-    height: 75vh;
-}
-
-.card-text {
-    font-family: "Poppins", sans-serif;
 }

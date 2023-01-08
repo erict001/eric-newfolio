@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/erict001/eric-newfolio#readme",
   "dependencies": {
+    "express-handlebars": "^6.0.6",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0",
     "typewriter-effect": "^2.19.0"
   }
 }
