@@ -54,7 +54,7 @@ nav a:hover {
 
 .body {
     /* height: 50vh; */
-    background-color: white;
+    background-color: rgb(231, 230, 230);
     padding: 3vh 0 0 0;
     text-align: center;
 }
@@ -85,3 +85,55 @@ nav a:hover {
     height: 25vh;
     border: solid black 3px;
 }
+
+#jeopardy {
+    background-image: url(/images/jeopardy.png);
+    opacity: 0.75;
+    filter: grayscale(60%);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+
+}
+
+#appa {
+    background-image: url(/images/appa.png);
+    background-position: center;
+    /* opacity: 0.75; */
+    filter: grayscale(80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#appa:hover {
+    filter: grayscale(0%);
+}
+
+#appa div {
+    color: white;
+    position: absolute;
+    bottom: 18%;
+    left: 12%;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container {
+    position: relative;
+    color: white;
+    background-image: url(/images/appa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+  }
