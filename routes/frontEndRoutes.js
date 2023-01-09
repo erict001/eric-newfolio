@@ -6,15 +6,16 @@ router.get('/', async (req, res) => {
     res.render("home")
 });
 
-router.get('/portfolio', async (req, res) => {
+router.get('/blog', async (req, res) => {
+    res.render("molly")
 });
 
-router.get('/about', (req, res) => {
-    res.render("about")
+router.get('/jeopardy', (req, res) => {
+    res.render("jeopardy")
 })
 
-router.get('/add-post', (req, res) => {
-    res.render('backend')
+router.get('/appa', (req, res) => {
+    res.render('appa')
 });
 
 router.get("/about", (req, res) => {
