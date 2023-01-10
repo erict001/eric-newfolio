@@ -2,9 +2,9 @@
     background-color: rgb(50, 50, 50);
     color: white;
     margin: 0 0 0 0;
-    background-image: url(/images/logos.png);
+    background-image: url(/images/view.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-blend-mode:color-burn;
 }
 
