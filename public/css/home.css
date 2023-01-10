@@ -1,11 +1,11 @@
 .background {
-    background-color: rgb(50, 50, 50);
+    background-color: rgba(50, 50, 50, 0.775);
     color: white;
     margin: 0 0 0 0;
     background-image: url(/images/view.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-blend-mode:color-burn;
+    background-blend-mode: color-burn;
 }
 
 nav {
@@ -86,6 +86,20 @@ nav a:hover {
     border: solid black 3px;
 }
 
+/* OLD STYLLING */
+#blog {
+    background-image: url(/images/jeopardy.png);
+    opacity: 0.75;
+    filter: grayscale(60%);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+}
+
+
+/* TRYING */
 #jeopardy {
     background-image: url(/images/jeopardy.png);
     opacity: 0.75;
@@ -95,31 +109,40 @@ nav a:hover {
     background-repeat: no-repeat;
     position: relative;
     color: white;
-
 }
+
 
 #appa {
     background-image: url(/images/appa.png);
     background-position: center;
-    /* opacity: 0.75; */
-    filter: grayscale(80%);
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 150%;
+    filter: grayscale(50%);
     position: relative;
 }
 
 #appa:hover {
-    filter: grayscale(0%);
+    filter: grayscale(100%);
+    transition: 1s;
+    left: 0;
 }
 
 #appa div {
     color: white;
     position: absolute;
-    bottom: 18%;
+    bottom: 25%;
     left: 12%;
     font-size: 50px;
+    width: max-content;
     text-shadow: 1px 1px 2px black;
 }
+
+#appa h1:hover {
+    font-size: 60px
+}
+
+
 
 .container {
     position: relative;
@@ -129,11 +152,11 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
 
-  }
-  
-  /* Bottom left text */
-  .bottom-left {
+}
+
+/* Bottom left text */
+.bottom-left {
     position: absolute;
     bottom: 25%;
     left: 20%;
-  }
+}
