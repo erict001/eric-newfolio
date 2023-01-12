@@ -8,6 +8,11 @@
     background-blend-mode: color-burn;
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit
+}
+
 nav {
     display: flex;
     height: 10vh;
@@ -67,8 +72,8 @@ nav a:hover {
     list-style: none;
     display: flex;
     justify-content: center;
-    height: 40vh;
-    width: 60vw;
+    height: 50vh;
+    width: 75vw;
     border: solid black 3px;
     margin-top: 5em
 }
@@ -86,7 +91,7 @@ nav a:hover {
     border: solid black 3px;
 }
 
-/* OLD STYLLING */
+/* START MOLLY BLOG */
 #blog {
     background-image: url(/images/jeopardy.png);
     opacity: 0.75;
@@ -98,51 +103,133 @@ nav a:hover {
     color: white;
 }
 
+#blog:hover {
+    filter: grayscale(100%);
+    transition: 1s;
+    left: 0; 
+}
 
-/* TRYING */
+/* END MOLLY BLOG */
+
+
+/* START JEOPARDY */
 #jeopardy {
-    background-image: url(/images/jeopardy.png);
-    opacity: 0.75;
-    filter: grayscale(60%);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     color: white;
 }
 
+#jeopardy::before{
+    content: "";
+    background-image: url(/images/jeopardy.png);
+      background-size: cover;
+      position: absolute;
+      filter: grayscale(20%);
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.55;
+}
 
+#jeopardy:hover {
+    filter: grayscale(100%);
+    transition: 1s;
+    left: 0; 
+}
+/* END JEOPARDY */
+
+/* START APPA'S LANDING */
 #appa {
-    background-image: url(/images/appa.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 150%;
-    filter: grayscale(50%);
     position: relative;
+    color: white;
+}
+
+#appa::before{
+    content: "";
+    background-image: url(/images/appa.png);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.55;
 }
 
 #appa:hover {
     filter: grayscale(100%);
     transition: 1s;
-    left: 0;
+    left: 0; 
 }
 
-#appa div {
+/* LEFT DIV */
+
+.div1 {
     color: white;
     position: absolute;
-    bottom: 25%;
+    bottom: 35%;
     left: 12%;
-    font-size: 50px;
+    font-size: 60px;
     width: max-content;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 
-#appa h1:hover {
-    font-size: 60px
+.div2 {
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    left: 12%;
+    font-size: 30px;
+    width: max-content;
+    text-shadow: 2px 2px 2px black;
 }
 
+.div3 {
+    position: absolute;
+    bottom: 20%;
+    left: 12%;
+    font-size: 20px;
+    width: max-content;
+}
+/* END LEFT DIV */
 
+/* START RIGHT DIV */
+.rightDiv1 {
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    right: 12%;
+    font-size: 60px;
+    width: max-content;
+    text-shadow: 2px 2px 2px black;
+}
+
+.rightDiv2 {
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    right: 12%;
+    font-size: 30px;
+    width: max-content;
+    text-shadow: 2px 2px 2px black;
+}
+
+.rightDiv3 {
+    position: absolute;
+    bottom: 20%;
+    right: 12%;
+    font-size: 20px;
+    width: max-content;
+}
+/* END RIGHT DIV */
+
+/* END APPA'S LANDING */
 
 .container {
     position: relative;
@@ -159,4 +246,60 @@ nav a:hover {
     position: absolute;
     bottom: 25%;
     left: 20%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #appa {
+        background-size: 300%;
+    }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* #appa {
+        background-size: 200%;
+    } */
+
+    #appa h1{
+        font-size: 30px
+    }
+
+    #jeopardy h1{
+        font-size: 30px
+    }
+
+    #blog h1{
+        font-size: 30px
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* #appa {
+        background-size: 150%;
+    } */
+
+    #appa h1{
+        font-size: 40px
+    }
+
+    #jeopardy h1{
+        font-size: 40px
+    }
+
+    #blog h1{
+        font-size: 40px
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
 }

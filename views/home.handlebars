@@ -4,10 +4,10 @@
             <a href="/"><img style="width: 20%" src="images/logos.png"></a>
         </div>
         <div class="tags">
-            <a>
+            <a href="#fullStack">
                 <h2>Full Stack</h2>
             </a>
-            <a>
+            <a href="#professional">
                 <h2>Professional</h2>
             </a>
             <a>
@@ -27,53 +27,74 @@
 <section class="body">
     <h1>Latest Projects</h1>
     <section>
-        <ul class="categories">
-            <li id="blog" style="background-image: url(/images/appa.png);
-">
-                {{!-- Molly's Blog --}}
-                <a href="/blog">
-                </a>
+        <ul class="categories" id="fullStack">
+            {{!-- Molly's Blog --}}
+            <li id="blog" style="background-image: url(/images/appa.png);">
+                <div class="div1">
+                    <h1>Molly's Blog</h1>
+                </div>
+                <div class="div2">
+                    <i>
+                        <h4>Food and Lifestyle Blog</h4>
+                    </i>
+                </div>
+                <div class="div3">
+                    <a href="/blog"><button>View More</button></a>
+                </div>
             </li>
+            {{!-- Inspirational Jeopardy --}}
             <li id="jeopardy">
-                {{!-- Inspirational Jeopardy --}}
-                <a href="/jeopardy">
-                </a>
+                <div id="slide">
+                        <div class="rightDiv1">
+                            <h1>Inspirational Jeopardy</h1>
+                        </div>
+                        <div class="rightDiv2">
+                            <i>
+                                <h4>Trivia game</h4>
+                            </i>
+                        </div>
+                        <div class="rightDiv3">
+                            <a href="/jeopardy"><button>View More</button></a>
+                        </div>
+                </div>
             </li>
             {{!-- Appa's Landing --}}
             <li id="appa">
                 <div id="slide">
-                    <a href="/appa">
-                        <div>
+                        <div class="div1">
                             <h1>Appa's Landing</h1>
                         </div>
-                    </a>
-                </div>
-            </li>
-            <li class="container">
-                <div>
-                    {{!-- <img src="/images/jeopardy.png" alt="Snow" style="height: 100%; width:100%;"> --}}
-                    <div class="bottom-left">Bottom Left</div>
-                    <div class="top-left">Top Left</div>
-                    <div class="top-right">Top Right</div>
-                    <div class="bottom-right">Bottom Right</div>
-                    <div class="centered">Centered</div>
+                        <div class="div2">
+                            <i>
+                                <h4>2d side scrolling game</h4>
+                            </i>
+                        </div>
+                        <div class="div3">
+                        <a href="/appa"><button>View More</button></a>
+                    </div>
                 </div>
             </li>
         </ul>
     </section>
     <section>
-        <ul class="professional">
+        <ul class="professional" id="professional">
             <li>
                 {{!-- United Way --}}
-                <h1>United Way</h1>
+                <div>
+                    <h1>United Way</h1>
+                </div>
             </li>
             <li>
                 {{!-- Mojave Desert --}}
-                <h1>Mojave Desert</h1>
+                <div>
+                    <h1>Mojave Desert</h1>
+                </div>
             </li>
             <li>
                 {{!-- Appa's Landing --}}
-                <h1>Apollo Academy Basketball</h1>
+                <div>
+                    <h1>Apollo Academy Basketball</h1>
+                </div>
             </li>
         </ul>
     </section>
