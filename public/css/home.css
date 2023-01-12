@@ -80,20 +80,29 @@ nav a:hover {
 
 /* START MOLLY BLOG */
 #blog {
-    background-image: url(/images/jeopardy.png);
-    opacity: 0.75;
-    filter: grayscale(60%);
+    position: relative;
+    color: white;
+}
+
+#blog::before {
+    content: "";
+    background-image: url(/images/appa.png);
+    position: absolute;
+    filter: grayscale(20%);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    color: white;
+    opacity: 0.55;
 }
 
 #blog:hover {
     filter: grayscale(100%);
     transition: 1s;
-    left: 0; 
+    left: 0;
 }
 
 /* END MOLLY BLOG */
@@ -105,27 +114,27 @@ nav a:hover {
     color: white;
 }
 
-#jeopardy::before{
+#jeopardy::before {
     content: "";
     background-image: url(/images/jeopardy.png);
-      background-size: cover;
-      position: absolute;
-      filter: grayscale(20%);
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.55;
+    position: absolute;
+    filter: grayscale(20%);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.55;
 }
 
 #jeopardy:hover {
     filter: grayscale(100%);
     transition: 1s;
-    left: 0; 
+    left: 0;
 }
+
 /* END JEOPARDY */
 
 /* START APPA'S LANDING */
@@ -134,25 +143,26 @@ nav a:hover {
     color: white;
 }
 
-#appa::before{
+#appa::before {
     content: "";
     background-image: url(/images/appa.png);
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.55;
+    background-size: cover;
+    position: absolute;
+    filter: grayscale(20%);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.55;
 }
 
 #appa:hover {
     filter: grayscale(100%);
     transition: 1s;
-    left: 0; 
+    left: 0;
 }
 
 /* LEFT DIV */
@@ -184,6 +194,7 @@ nav a:hover {
     font-size: 20px;
     width: max-content;
 }
+
 /* END LEFT DIV */
 
 /* START RIGHT DIV */
@@ -214,6 +225,7 @@ nav a:hover {
     font-size: 20px;
     width: max-content;
 }
+
 /* END RIGHT DIV */
 
 /* END APPA'S LANDING */
@@ -244,7 +256,7 @@ nav a:hover {
 .professional li {
     list-style: none;
     width: 100%;
-    height: 35vh;
+    height: 30em;
     border: solid black 3px;
 }
 
@@ -253,21 +265,23 @@ nav a:hover {
     color: white;
     height: 80%;
     width: 100%;
+    border: 1px solid black;
+
 }
 
-#unitedWay::before{
+#unitedWay::before {
     content: "";
     background-image: url(/images/uwmqt.png);
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* opacity: 0.55; */
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.55; */
 }
 
 #mojave {
@@ -275,21 +289,22 @@ nav a:hover {
     color: white;
     height: 80%;
     width: 100%;
+    border: 1px solid black;
 }
 
-#mojave::before{
+#mojave::before {
     content: "";
     background-image: url(/images/mojave.png);
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      /* opacity: 0.55; */
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.55; */
 }
 
 #apollo {
@@ -297,21 +312,40 @@ nav a:hover {
     color: white;
     height: 80%;
     width: 100%;
+    border: 1px solid black;
+
 }
 
-#apollo::before{
+#apollo::before {
     content: "";
     background-image: url(/images/apollo.png);
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-position: top;
-      background-size: cover;
-      background-repeat: no-repeat;
-      opacity: 0.55;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.55; */
+}
+
+#apollo:hover, #mojave:hover, #unitedWay:hover{
+    filter:sepia(0.8)
+}
+
+.proDiv {
+    text-align: left;
+    padding: 1vh 0 0 1vw;
+}
+
+.proDiv h1 {
+    font-size: 25px
+}
+
+.proDiv h2 {
+    font-size: 20px;
 }
 
 /* END PROFESSIONAL SECTION */
@@ -322,7 +356,7 @@ nav a:hover {
         background-size: 300%;
     }
 
-} 
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -330,18 +364,18 @@ nav a:hover {
         background-size: 200%;
     } */
 
-    #appa h1{
+    #appa h1 {
         font-size: 30px
     }
 
-    #jeopardy h1{
+    #jeopardy h1 {
         font-size: 30px
     }
 
-    #blog h1{
+    #blog h1 {
         font-size: 30px
     }
-} 
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -349,25 +383,21 @@ nav a:hover {
         background-size: 150%;
     } */
 
-    #appa h1{
-        font-size: 40px
+    #blog h1 {
+        font-size: 60px
     }
-
-    #jeopardy h1{
-        font-size: 40px
+    
+    #jeopardy h1 {
+        font-size: 60px
     }
-
-    #blog h1{
-        font-size: 40px
+    
+    #appa h1 {
+        font-size: 60px
     }
-} 
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-} 
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
+@media only screen and (min-width: 1200px) {}

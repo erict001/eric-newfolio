@@ -25,13 +25,16 @@
 </section>
 
 <section class="body">
-    <h1>Latest Projects</h1>
+    <section>
+        <h1 style="letter-spacing: .2rem; font-size: 30px">Latest Projects</h1>
+        <h1 style="font-size: 50px">Full Stack Applications</h1>
+    </section>
     <section>
         <ul class="categories" id="fullStack">
             {{!-- Molly's Blog --}}
-            <li id="blog" style="background-image: url(/images/appa.png);">
+            <li id="blog">
                 <div class="div1">
-                    <h1>Molly's Blog</h1>
+                    <h1>Terra De La Cafe</h1>
                 </div>
                 <div class="div2">
                     <i>
@@ -45,31 +48,31 @@
             {{!-- Inspirational Jeopardy --}}
             <li id="jeopardy">
                 <div id="slide">
-                        <div class="rightDiv1">
-                            <h1>Inspirational Jeopardy</h1>
-                        </div>
-                        <div class="rightDiv2">
-                            <i>
-                                <h4>Trivia game</h4>
-                            </i>
-                        </div>
-                        <div class="rightDiv3">
-                            <a href="/jeopardy"><button>View More</button></a>
-                        </div>
+                    <div class="rightDiv1">
+                        <h1>Inspirational Jeopardy</h1>
+                    </div>
+                    <div class="rightDiv2">
+                        <i>
+                            <h4>Trivia game</h4>
+                        </i>
+                    </div>
+                    <div class="rightDiv3">
+                        <a href="/jeopardy"><button>View More</button></a>
+                    </div>
                 </div>
             </li>
             {{!-- Appa's Landing --}}
             <li id="appa">
                 <div id="slide">
-                        <div class="div1">
-                            <h1>Appa's Landing</h1>
-                        </div>
-                        <div class="div2">
-                            <i>
-                                <h4>2d side scrolling game</h4>
-                            </i>
-                        </div>
-                        <div class="div3">
+                    <div class="div1">
+                        <h1>Appa's Landing</h1>
+                    </div>
+                    <div class="div2">
+                        <i>
+                            <h4>2d side scrolling game</h4>
+                        </i>
+                    </div>
+                    <div class="div3">
                         <a href="/appa"><button>View More</button></a>
                     </div>
                 </div>
@@ -77,24 +80,36 @@
         </ul>
     </section>
     <section>
-        <h1>Professional Projects</h1>
+        <section style="padding: 5vh 0 5vh 0">
+            <h1 style="letter-spacing: .2rem; font-size: 30px">Latest Projects</h1>
+            <h1 style="font-size: 50px">Professional Projects</h1>
+        </section>
         <ul class="professional" id="professional">
-                {{!-- United Way --}}
-            <li >
-                <div id="unitedWay">
-                    <h1>United Way</h1>
+            {{!-- United Way --}}
+            <li>
+                <a href="https://www.uwmqt.org"><div id="unitedWay">
+                </div></a>
+                <div class="proDiv">
+                    <h1>United Way of Marquette County</h1>
+                    <i><h2>Frontend Developer + UI/UX Designer</h2></i>
                 </div>
             </li>
-                {{!-- Mojave Desert --}}
-            <li >
-                <div id="mojave">
-                    <h1>Mojave Desert</h1>
+            {{!-- Mojave Desert --}}
+            <li>
+                <a href="https://www.mdlt.org"><div id="mojave">
+                </div></a>
+                <div class="proDiv">
+                    <h1>Mojave Desert Land Trust</h1>
+                    <i><h2>Frontend Developer</h2></i>
                 </div>
             </li>
-                {{!-- Apollo Academy Basketball --}}
-            <li >
-                <div id="apollo">
+            {{!-- Apollo Academy Basketball --}}
+            <li>
+                <a href="https://www.apolloacademyhoops.com"><div id="apollo">
+                </div></a>
+                <div class="proDiv">
                     <h1>Apollo Academy Basketball</h1>
+                    <i><h2>Frontend Developer + UI/UX Designer</h2></i>
                 </div>
             </li>
         </ul>

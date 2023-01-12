@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(43, 43, 43);
     color: white;
 }
 
@@ -7,14 +7,16 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 12em;
-    height: 15em;
+    /* width: 12em; */
+    height: 12em;
     padding-top: 3vh
   }
 
 .footerList {
     display: flex;
     justify-content: space-evenly;
-    height: 40vh;
+    height: 20vh;
     list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
 }
