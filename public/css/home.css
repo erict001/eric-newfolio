@@ -86,7 +86,7 @@ nav a:hover {
 
 #blog::before {
     content: "";
-    background-image: url(/images/appa.png);
+    background-image: url(/images/blog.png);
     position: absolute;
     filter: grayscale(20%);
     top: 0px;

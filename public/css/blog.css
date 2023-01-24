@@ -1,0 +1,9 @@
+.blogBackground {
+    background-color: rgba(50, 50, 50, 0.775);
+    color: white;
+    margin: 0 0 0 0;
+    background-image: url(/images/food.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-blend-mode: color-burn;
+}
