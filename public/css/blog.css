@@ -7,3 +7,53 @@
     background-position: top;
     background-blend-mode: color-burn;
 }
+
+.blogIntro {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8vw;
+}
+
+#devRoles {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5vh;
+    text-transform: uppercase;
+}
+
+#devRoles span {
+    color: rgb(155, 190, 250);
+    padding-right: 0.5vw
+}
+
+.project {
+    height: 50vh;
+    text-align: center; 
+    background-color: black; 
+    color: white
+}
+
+.project h1 {
+    padding: 5vh 0 3vh 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.project h2 {
+    padding: 0 15vw 0 15vw;
+    line-height: 1.5em;
+}
+
+.visitSite {
+    border: 1px solid white; 
+    font-size: 2rem;
+    width: 25rem;
+    height: min-content;
+}
+
+.branding {
+    height: 200vh;
+    background-color: rgb(235, 235, 235);
+}
