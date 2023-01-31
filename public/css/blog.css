@@ -56,4 +56,6 @@
 .branding {
     height: 200vh;
     background-color: rgb(235, 235, 235);
+    padding-top: 5vh;
+    padding: 5vh 6vw
 }
