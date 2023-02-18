@@ -5,7 +5,7 @@
     background-image: url(/images/food.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-blend-mode: color-burn;
+    background-blend-mode:soft-light;
 }
 
 .blogIntro {
@@ -14,6 +14,11 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 8vw;
+}
+
+.cafe {
+    font-size: 6em;
+    text-shadow: 2px black;
 }
 
 #devRoles {
@@ -29,7 +34,7 @@
 }
 
 .project {
-    height: 60vh;
+    height: max-content;
     text-align: center; 
     background-color: black; 
     color: white
@@ -54,8 +59,25 @@
 }
 
 .branding {
-    height: 200vh;
+    display: flex;
+    height: 250vh;
     background-color: rgb(235, 235, 235);
-    padding-top: 5vh;
     padding: 5vh 6vw
+}
+
+#branding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94vw;
+    padding: 0 12vw 0 0;
+}
+
+.styling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94vw;
+    padding: 0 10vw 0 0;
+    margin-top: 12vh
 }
